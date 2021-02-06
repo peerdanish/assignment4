@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="container">
+ <h1>Complete your profile to continue</h1>
+        <img src="user.png" alt="User image here" width="50px" id="user">
+        <form action="php/form.php" method="POST">
+<div class="row">
+        <div class="col-md-6 form-group">
+            <label class="control-label" for="institute">Institution/Organization</label>
+            <input class="form-control" type="text" placeholder="Enter your Institution/Organisation" id="institute" name="institute" required>
+        </div>
+        <div class="col-md-6 form-group">
+            <label for="display">Display Name</label>
+            <input class="form-control" type="text" placeholder="Enter your Display name" id="display" name="name" required>
+        </div> 
+</div>
+<div class="row">
+        <div class="col-md-6 form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" class="form-control" placeholder="Select Gender" name="gender" required>
+            <option value="" selected disabled hidden>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+    </div>
+    <div class="col-md-6 form-group">
+            <label for="contact">Contact Number</label>
+            <input class="form-control" type="number" placeholder="Enter your Contact Number" id="contact" name="contact" required>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 form-group">
+            <label for="qualification">Highest Qualification</label>
+            <select id="graduation" class="form-control" placeholder="Select Highest Qualification" name="qualification" required>
+                <option value="" selected disabled hidden>Select Highest Qualification</option>
+                <option>P.H.D</option>
+                <option>Masters</option>
+                <option>Garduate</option>
+                <option>Matriculation</option>
+            </select>
+    </div>
+    <div class="col-md-6 form-group">
+            <label for="graduation">Graduation Year</label>
+            <input class="form-control" type="number" placeholder="Graduation Year e.g 2019" id="graduation" name="graduation" required>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 form-group">
+            <label for="workxp">Work Experience(in years)</label>
+            <input class="form-control" type="number" placeholder="Work Experience in Years e.g 3" id="workxp" name="workxp" required>
+    </div>
+    <div class="col-md-6 form-group">
+            <label for="state">State</label>
+            <select id="state" class="form-control" placeholder="Select State" name="state" required>
+                <option value="" selected disabled hidden>Select State</option>
+                <option>Jammu</option>
+                <option>Kashmir</option>
+                </select>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 form-group">
+            <label for="city">City</label>
+            <input class="form-control" type="text" placeholder="Enter your City Name" id="city" name="city" required>       
+    </div>
+</div>
+<input type="hidden" name="check_submit" value="1" />
+<button class="btn btn-info">Submit</button>
+<button class="btn">Skip</button>
+</form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+#user{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+}
+button{
+    float: right;
+}
